@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Buy",
+    "description": "Extension pour Auto Buy des articles",
+    "version": "12.5",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.roblox.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_icon": "logo.png"
+    },
+    "icons": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  }
+  
